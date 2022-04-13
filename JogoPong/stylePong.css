@@ -1,0 +1,178 @@
+﻿﻿#canvas {
+    border: 2px solid #000000;
+    box-shadow: 2px 2px 2em rgb(2, 1, 5), -2px -2px 2em rgb(2, 1, 5), -2px 2px 2em rgb(2, 1, 5), 2px -2px 2em rgb(2, 1, 5);
+}
+body{
+    background-color: darkblue;
+}
+.container1{
+    text-align: center;
+}
+.container{
+    padding: 1px;
+    color: darkblue;
+    text-align:center;
+    margin-left:30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 35px;
+}
+header{
+    background-color: darkblue;
+    box-shadow: 2px 2px 1em rgb(2, 1, 5), -2px -2px 1em rgb(2, 1, 5);
+    border-radius: 30px;
+    padding-left:0px;
+}
+
+h1{
+    color:rgb(0, 0, 0);
+    background-color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.chose-difficult{
+    border: 1px solid rgb(0, 0, 0);
+    width: 250px;
+    height: 350px;
+    border-radius: 20px;
+    padding:10px;
+    box-shadow: 2px 2px 1em rgb(11, 12, 12), -2px -2px 1em rgb(11, 12, 12);
+    margin-left: 10%;
+    margin-top: 60px;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    transition-property: width height font-size margin-top;
+    transition-duration: 0.5s;
+}
+.chose-difficult:hover{
+    width: 300px;
+    height: 400px;
+    font-size: 30px;
+    margin-top: 10px;
+
+}
+
+.chose-mode{
+    border: 1px solid rgb(0, 0, 0);
+    width: 250px;
+    height: 350px;
+    border-radius: 20px;
+    padding:10px;
+    box-shadow: 2px 2px 1em rgb(6, 7, 7), -2px -2px 1em rgb(6, 7, 7);
+    margin-left: 40%;
+    margin-top: -370px;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    position:center;
+    transition-property: width height font-size margin-top;
+    transition-duration: 0.5s;
+}
+.chose-mode:hover{
+    width: 300px;
+    height: 400px;
+    font-size: 30px;
+    margin-top: -420px;
+
+}
+.botao_play{
+    border: 2px solid #000000;
+    border-radius: 30px;
+    width: 500px;
+    height: 50px;
+    margin-top: 80px;
+    background-color: transparent;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:19px;
+    color: white;
+    box-shadow: 2px 2px 1em rgb(6, 7, 7), -2px -2px 1em rgb(6, 7, 7);
+    
+}
+.botao_play:hover{
+    background-color: rgb(6, 7, 7);
+    color:rgb(0, 0, 0);
+    transition: 0.7s;
+}
+.button_start{
+    text-align:center;
+}
+.chose-element{
+    border: 1px solid rgb(0, 0, 0);
+    width: 250px;
+    height: 350px;
+    border-radius: 20px;
+    padding:10px;
+    box-shadow: 2px 2px 1em rgb(6, 7, 7), -2px -2px 1em rgb(6, 7, 7);
+    margin-left: 70%;
+    margin-top: -370px;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    position:center;
+    transition-property: width height font-size margin-top;
+    transition-duration: 0.5s;
+}
+.chose-element:hover{
+    width: 300px;
+    height: 400px;
+    font-size: 30px;
+    margin-top: -420px;
+
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: rgb(6, 7, 7);
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(6, 7, 7);
+    border-radius: 30px;
+}
+#nivel-dificuldade{
+    border: transparent;
+    border-radius: 30px;
+    width:100px;
+    height: 40px;
+    font-size: 20px;
+    text-align:center;
+}
+.selecao_dificuldade{
+    border: 2px solid #000000;
+    border-radius: 30px;
+    width: 180px;
+    height: 50px;
+    margin-top: 40px;
+    background-color: transparent;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:19px;
+    color: white;
+    box-shadow: 2px 2px 1em rgb(6, 7, 7), -2px -2px 1em rgb(6, 7, 7);
+    
+}
+.selecao_dificuldade:hover{
+    background-color: darkblue;
+    color:white;
+    transition: 0.5s;
+}
+.selecao_dificuldade_reset{
+    border: 2px solid #000000;
+    border-radius: 30px;
+    width: 180px;
+    height: 50px;
+    margin-top: 40px;
+    background-color: transparent;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:19px;
+    color: white;
+    box-shadow: 2px 2px 1em rgb(6, 7, 7), -2px -2px 1em rgb(6, 7, 7);
+    
+}
+.selecao_dificuldade_reset:hover{
+    background-color: darkblue;
+    color:white;
+    transition: 0.5s;
+}
+p{
+    color: rgb(255, 255, 255);
+}

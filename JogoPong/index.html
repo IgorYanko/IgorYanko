@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylePong.css">
+    <script src='script.js'></script>
+    <script src='jquery.js'></script>
+    <title>Jogo Pong</title>
+</head>
+<body>
+    <div class="elements" id="menu">
+        <header>
+            <div class="container">
+                <p> ---PONG--- </p>
+            </div>
+        </header>
+        <div class="chose-difficult">
+            <p style="color: rgb(0, 0, 0)">Selecione o nível de dificuldade</p>
+            <input type="number" id="nivel-dificuldade"><br>
+            <button class="selecao_dificuldade" onclick="selecao_dificuldade()" id="selecionar-dificuldade"> CONCLUÍDO </button>
+            <button class="selecao_dificuldade_reset" onclick="reset_selecao_dificuldade()" id="reset-selecionar-dificuldade"> RESET </button>
+        
+        </div>
+        <div class="chose-mode">
+            <p style="color: rgb(0, 0, 0)">Selecione o modo de jogo</p><br>
+            <a onclick="singleplayer()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" fill="currentColor" class="bi bi-dice-1-fill" viewBox="0 0 16 16">
+                    <path d="M3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3zm5 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg>
+            </a>
+            <label style="color:black">.</label>
+            <a onclick="multiplayer()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" fill="currentColor" class="bi bi-dice-2-fill" viewBox="0 0 16 16">
+                    <path d="M0 3a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3zm5.5 1a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0zm6.5 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                  </svg>
+            </a>
+            <p id="resposta_player"></p>
+        </div>
+        <div class="chose-element">
+            <p style="color: rgb(0, 0, 0)">Selecione a cor de fundo do game, clique no retângulo abaixo</p>
+            <input type="color" id="select-color"><br>
+            <button class="selecao_dificuldade" onclick="selecionar_cor()"> SELECIONAR </button>
+            <p id="resposta-cor"></p>
+        </div>
+        <div class="button_start">
+            <a onclick="iniciarJogo()"><button class="botao_play"> Jogar </button></a>
+        </div>
+    </div><br>
+    
+    <div class="container1" style="display:none; margin-top:50px;" id="jogo-pong">
+        <label id="mensagem_vencedor"></label>
+        <canvas id="canvas" width="800" height="480">
+            Navegador não suportado :c
+        </canvas><br>
+        <button class="botao_play" onclick="acessar_menu()"> MENU </button>
+    </div>
+    </body>
+    </body>
+</body>
+</html>
